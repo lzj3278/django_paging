@@ -5,7 +5,7 @@ from django.utils.safestring import mark_safe
 
 class Pageinfo(object):
 	'''
-
+	计算分页数据
 	'''
 
 	def __init__(self, page, count, default_num):
