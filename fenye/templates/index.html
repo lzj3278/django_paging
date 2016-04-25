@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+</head>
+<body>
+    <h1>主机信息</h1>
+    <table border="1">
+    {% for foo in data %}
+        <tr>
+        <td>{{ foo.hostname }}</td>
+        <td>{{ foo.ip }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <div>总条数:{{ count }}</div>
+    <div>
+        {{ page }}
+    </div>
+</body>
+</html>
