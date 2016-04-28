@@ -10,6 +10,7 @@ from fenye_app import html_helper
 # Create your views here.
 
 def index(request, page):
+	# request. =
 	page_int = commom.try_init(page, 1)  # 把所有page都变成int型
 	count = models.host.objects.all().count()  # 计算总数据数
 	#调用计算值的函数
